@@ -101,6 +101,17 @@ After you have downloaded the datasets, you can follow the settings in [nnUNet](
 ```
 You can refer to ``nnFormer/nnformer/dataset_json/`` for data split.
 
+```
+export nnFormer_raw_data_base="/code/nnFormerFrame/DATASET/nnFormer_raw"
+export nnFormer_preprocessed="/code/nnFormerFrame/DATASET/nnFormer_preprocessed"
+export RESULTS_FOLDER="/code/nnFormerFrame/DATASET/nnFormer_trained_models"
+source /root/.bashrc
+
+```
+
+
+
+
 After that, you can preprocess the above data using following commands:
 ```
 nnFormer_convert_decathlon_task -i ../DATASET/nnFormer_raw/nnFormer_raw_data/Task01_ACDC
